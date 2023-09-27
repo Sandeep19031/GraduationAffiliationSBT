@@ -1,0 +1,149 @@
+@import "../Theme/_var.scss";
+
+
+
+.horizontalLine {
+    height: 1px;
+    background-color: $dark;
+}
+
+.photoOutline {
+    border: 2px solid rgb(242, 242, 242);
+    width: max-content;
+}
+
+.idCard_header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.idCard_body {
+    display: flex;
+    margin-top: 10px;
+}
+.idCard_body_right {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.backContent {
+    padding: 10px;
+}
+
+.idCard_bottom {
+    
+    margin-top: 10px;
+
+}
+
+
+
+.studentSign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.issuingSign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#backContent_row{
+    display: flex;
+}
+
+#contentRow_left {
+    width: 30%;
+}
+#contentRow_right {
+    width: 70%;
+}
+
+.back_bottom > p{
+    text-align: center;
+    margin: 0px;
+    font-size: 13px;
+}
+
+
+.blackBox {
+    height: 40px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+
+
+.horizontalLine_back {
+    height: 1px;
+    background-color: $dark;
+    margin: 5px;    
+}
+
+.idCard{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.idCard_Back {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #90ABB6;
+}
+
+.idCard_Front {
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 1rem;
+    background-color: rgb(226,232,224); 
+    position: relative;
+
+    &:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #ccc;
+		left: 20px;
+		right: 20px;
+		bottom: 0;
+		top: 50%;
+		z-index: -1;
+		box-shadow: 0 0 40px lighten(#000, 60%);
+		transition: box-shadow .2s ease-in-out;
+	}
+    &.level-3 {
+		&:hover {
+			&:before {
+				box-shadow: 0 0 80px lighten(#000, 60%);
+			}
+		}
+	}
+}
+
+a {
+    color: blue !important;
+}
+
+.graduationBottom{
+    margin-top: 10px;
+}
+
+#bottomHorizon {
+    margin-top: 10px;
+}
+
